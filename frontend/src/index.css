@@ -1,0 +1,722 @@
+*{
+  margin: 0;
+  font-family: "Dancing Script"
+ 
+}
+/* =========================== Intro Background Image Start ==================== */
+#backimage{
+  background-image: url("./assets/FrontendImages/BackgImage/Backimg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#backimage>.container>.homecont{
+  background: #ffffffcc;
+  padding: 50px 50px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+#backimage>.container>.homecont>.subtitle {
+  font-family: "Dancing Script", cursive;
+  font-size: 24px;
+  color: #2e4d2c;
+}
+#backimage>.container>.homecont>.tittle {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2e2e2e;
+  margin: 10px 0;
+}
+#backimage>.container>.homecont>#regis>.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+#backimage>.container>.homecont>#regis>.btn:hover {
+  background-color: #0fa535;
+}
+/* ===============================Form Start======================================== */
+#backimage>#formcontainer{
+  background: #ffffffcc;
+  padding: 50px 0px;
+  max-height: 800px;
+  max-width: 700px;
+}
+#backimage>#formcontainer>.row{
+  justify-content: center;
+}
+
+/* =========================== Background Image End ==================== */
+
+
+/* =================================== NAVBAR START ================================ */
+/*< ============================ SOCIAL ICON START ========================================== >*/
+.container-fluid>.container>.row>.col-lg-4>.socialmedia{
+  color: #747070;
+}
+.container-fluid>.container>.row>.col-lg-4>.socialmedia>#fb:hover{
+  color:  #4911cc;
+}
+.container-fluid>.container>.row>.col-lg-4>.socialmedia>#twi:hover{
+  color:  skyblue;
+}
+.container-fluid>.container>.row>.col-lg-4>.socialmedia>#ins:hover{
+  color:  palevioletred;
+}
+.container-fluid>.container>.row>.col-lg-4>.socialmedia>#ut:hover{
+  color:  red;
+}
+@media (max-width: 575.98px) {
+  .socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+  .socialmedia i {
+    margin-right: 15px;
+    font-size: 24px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .socialmedia {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialmedia i {
+    margin-right: 20px;
+    font-size: 2px;
+  }
+  .socialmedia>#fb:hover{
+  color:  #4911cc;
+}
+.socialmedia>#twi:hover{
+  color:  skyblue;
+}
+.socialmedia>#ins:hover{
+  color:  #df054d;
+}
+.socialmedia>#ut:hover{
+  color:  red;
+}
+}
+/*< ============================ SOCIAL ICON END ========================================== >*/
+
+/*< ============================ MARQUEE START ========================================== >*/
+
+.marqueediv {
+  width: 69vw;   
+  margin-left: calc(-30vw + 50%); 
+  margin-right: calc(-90vw + 50%);  
+  height: 20px;
+}
+.marqueediv #marqueetag .marqueecont .text-dark .red{
+  color: red;
+}
+
+/*< ============================ MARQUEE END ========================================== >*/
+/*< ============================ ACCOUNT ICON START ========================================== >*/
+
+.container-fluid>.container>.row>.col-lg-4>.Account{
+  color: #747070;
+  display: flex;
+  gap: 16px;
+}
+.container-fluid>.container>.row>.col-lg-4>.Account{
+  position: relative;
+}
+.container-fluid>.container>.row>.col-lg-4>.Account>.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;   
+}
+.container-fluid>.container>.row>.col-lg-4>.Account>.fa-regular:hover>.dropdown-menu {
+  display: block;
+  position: absolute;
+  font-size: 12px;
+  margin-right: 50px;
+  box-shadow: 0px 2px 5px #444242;
+  min-width: 105px;
+  z-index: 1050;
+}
+
+
+.container-fluid>.container>.row>.col-lg-4>.Account>.fa-regular>.dropdown-menu>li>a{
+  display: block;
+  color: #747070;
+  text-decoration: none;
+  padding: 4px 6px; 
+}
+.container-fluid>.container>.row>.col-lg-4>.Account>.fa-regular>.dropdown-menu>li>a:hover {
+  color: #0dca0d;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .Account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .Account i {
+    font-size: 28px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .Account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .Account i {
+    font-size: 28px;
+  }
+}
+
+/*< ============================ ACCOUNT ICON END ========================================== >*/
+.quantitydiv button {
+  min-width: 40px;
+  height: 40px;
+  font-size: 18px;
+  padding: 0;
+}
+
+.quantitydiv input {
+  height: 40px;
+  font-size: 16px;
+}
+
+/*< ============================  NAV2 START ========================================== >*/
+
+.sticky-top {
+  background-color: #0a6e05;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* keep navbar on top */
+}
+
+.container-fluid>.navbar{
+  position: sticky;
+ 
+}
+
+.container-fluid>.navbar>.container>.collapse>.icon{
+  color: white;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags{
+  color: white;
+}
+
+
+.container-fluid>.navbar>.container>.collapse>.anchortags{
+  position: relative;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags{
+  display: flex;
+  gap: 2rem;
+  margin-left: 16rem; 
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>a{
+  justify-content: center;
+  text-decoration: none;
+  color: #070707;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>a:hover {
+  color: #0dca0d;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>#accountDropdown{
+  text-decoration: none;
+  color: #070707;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>#accountDropdown:hover{
+  color: #0dca0d;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv{
+  position: relative;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  top: 100%; 
+  background: #fff;
+  min-width: 200px; 
+  box-shadow: 0px 2px 5px #444242;
+  z-index: 1000;  
+  
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv:hover>.dropdown-menu {
+  display: block;
+  margin-right: 50px;
+  box-shadow: 0px 0px 2px #444242;
+  max-width: 20px;
+
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu>li>a{
+  display: block;
+  padding: 8px 12px;
+  color: #747070;
+  text-decoration: none;
+}
+.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu>li>a:hover {
+  color: #0dca0d;
+}
+.container-fluid>.navbar>.container>.collapse>.icon>#heart:hover{
+  color: red;
+}
+
+@media (max-width: 991px) {
+  .anchortags {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .anchortags > a,
+  .anchortags > .dropdiv > a {
+    display: block !important;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff33; 
+  }
+
+  
+  .icon {
+    display: flex !important;
+    flex-direction: column !important;  
+    align-items: flex-start !important;
+    gap: 12px; 
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .icon i,
+  .icon .cartdiv {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff33;
+  }
+}
+
+
+
+/*< ============================ MODAL ========================================== >*/
+
+.modal>.modal-dialog>.modal-content>.modal-body>a{
+  text-decoration: none;
+  color: #747070;
+}
+
+.offcanvas{
+  width: 100%;
+}
+
+/*< ============================ NAVBAR END ========================================== >*/
+
+
+/*< ============================ FOOTER START ========================================== >*/
+
+#Footerbg{
+  background-color: black;
+  color: white;
+}
+#Footerbg>.container>.row>#conabout>ul>li{
+  list-style: none;
+}
+/*< ============================ FOOTER END ========================================== >*/
+/*< ============================ HOMESWIPER START ========================================== >*/
+
+#swipercont .swiperhome .slidetag {
+  position: relative;
+}
+#swipercont .swiperhome .slidetag .swipertextcont {
+  position: absolute;
+  top: 50%;        
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  max-width: 700px;
+  z-index: 1;
+  background-color: #ebe5e5cc;
+  padding: 50px 50px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+#swipercont .swiperhome .slidetag .swipertextcont .Swipertittle{
+  font-family: "Dancing Script",cursive;
+  font-size: 30px;
+  color: #0c4d08;
+}
+#swipercont .swiperhome .slidetag .swipertextcont .buttontag .btn:hover{
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#swipercont .swiperhome .slidetag .swipertextcont .buttontag .btn:hover{
+ background-color: #0fa535;
+ text-decoration: none;
+}
+
+
+
+
+/*< ============================ HOMESWIPER END ========================================== >*/
+
+/*< ============================ HOME CONTENT  START ========================================== >*/
+
+#Contentfrt>{
+  position: relative;
+}
+#Contentfrt>.img-fluid{
+  position: relative;
+  z-index: 0;
+}
+
+ @media (max-width: 576px) {
+  .textcontent h4 {
+    margin-top: 50px;
+    font-size: 18px;
+  }
+  .textcontent p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .btnsection a {
+    min-width: 40px;
+    margin-bottom: 30px;
+  }
+  .btnsection .btn {
+    min-width: 50px;  
+    font-size: 8px;
+    padding: 4px 10px;
+  }
+}
+
+#Contentfrt>.container{
+  position: absolute;
+  top: 120px;       
+  left: 0;
+  width: 100%;
+  z-index: 2; 
+}
+#Contentfrt>#imgrow2{
+  position: absolute;
+  top: 116px;       
+  left: 0;
+  width: 100%;
+  z-index: 2; 
+}
+
+#Contentfrt>.container>.row>.col-lg-6>.sildeimg1>.Image1{
+    margin-left: 50px;
+}
+#Contentfrt>.container>.row>.col-lg-6>.sildeimg2{
+  display: flex;
+  justify-content: end;
+}
+#Contentfrt>.container>.row>.col-lg-6>.sildeimg2>.Image2{
+  margin-right: 70px;
+}
+
+#Contentfrt>#imgrow2{
+  padding-top: 150px;
+}
+
+#Contentfrt>#imgrow2>#rowcol2{
+  padding-top: 150px;
+}
+#Contentfrt>#imgrow2>#rowcol2>.sildeimg3>.Image3{
+   margin-left: 10px;
+}
+#Contentfrt>#imgrow2>.col-lg-6>.sildeimg4{
+    display: flex;
+    justify-content: end; 
+}
+#Contentfrt>#imgrow2>.col-lg-6>.sildeimg4>.Image4{
+  height: 373px;
+  margin-left: 90px;
+}
+/*< ============================ HOME CONTENT  END ========================================== >*/
+
+
+/* ============================================Shop now============================================ */
+.shopnowimgdiv {
+  position: relative;
+  overflow: hidden; 
+  border-radius: 8px;
+}
+ .shopnowimgdiv img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.shopnowimgdiv:hover img {
+  transform: scale(1.1); 
+}
+.shopnowcont {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: #0e0d0d80; 
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+.shopnowcont p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.shopnowbtn .btn {
+  margin-top: 10px;
+  background-color: #0c4d08;
+  border: none;
+  transition: 0.3s ease;
+}
+.shopnowbtn .btn:hover {
+  background-color: #0fa535;
+} 
+
+
+
+
+/*< ============================ ARRIVAL START ========================================== >*/
+#productcontainer>#productrow>#productcol>#productcard{
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#productcontainer>#productrow>#productcol>#productcard>#producticon{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+
+#productcontainer>#productrow>#productcol>#productcard:hover>#producticon{
+ 
+  display: flex;
+  gap: 5px;
+  padding: 10px 200px;
+}
+
+#productcontainer>#productrow>#productcol>#productcard>#productimg{
+  transition: 2s;
+
+}
+
+#productcontainer>#productrow>#productcol>#productcard:hover>#productimg{
+  transform: scale(1.2);       
+  transition: transform 0.7s ease-in-out; 
+}
+/* @media (max-width: 576px){
+  #productcol>#productcard{
+  position: relative;
+}
+#productcard>#producticon{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+#productcard:hover>#producticon{
+ 
+  display: flex;
+  gap: 5px;
+  padding: 10px 200px;
+
+}
+#productcard:hover>#producticon>#iconbg{
+  background-color: #f5f5f5;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+} */
+
+#productcontainer>#productrow>#productcol>#productcard:hover>#producticon>#iconbg{
+  background-color: #f5f5f5;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/*< ============================ ARRIVAL END ========================================== >*/
+/* /===================================================Type Section =========================== */
+#typecol #typecard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#typecard #typeicon {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+
+#typecard:hover #typeicon {
+  display: flex;
+
+  gap: 5px;
+  padding: 10px 200px;
+}
+
+#typecard #typeimg {
+  transition: 2s;
+}
+
+#typecard:hover #typeimg {
+  transform: scale(1.2);
+  transition: transform 0.7s ease-in-out;
+}
+#typeiconbg{
+  background-color: #f5f5f5;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+/*< ============================ OUR SERVICE START ========================================== >*/
+#oursercontainer>.row>.col-lg-4>.card>.serviceimgdiv{
+  background-color: #f5f5f5;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+#oursercontainer>.row>.col-lg-4>.card {
+  border-color: #228b22;
+}
+#oursercontainer>.row>.col-lg-4>.card:hover{
+  background-color: #228b22;
+  color: white;
+  transform: scale(1.06);
+  transition: 1s;
+}
+
+
+
+/*< ============================ OUR SERVICE END ================================>*/
+
+/*< ============================ SWIPERBLOG START ========================================== >*/
+
+.sildeimgdiv {
+  background-color: #d1c4c4;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-left: 150px;
+  
+}
+.sildeimgdiv:hover{
+  background-color: #0a6e05;
+}
+
+
+
+/*< ============================ SWIPERBLOG END ========================================== >*/
+/*< ============================ READMORE START ========================================== >*/
+.container-fluid>.row>.col-lg-6>.readcont{
+  height: 450px;
+  width: 560px;
+  background-color: #e9dada;
+}
+
+/*< ============================ READMORE END ========================================== >*/
+
+/*< ============================ ABOUT START ========================================== >*/
+#abtfluid{
+  background-color: #50a600;
+}
+#abtfluid>#abtrow>#abtcol>#abtcard{
+  background-color: #50a500;
+}
+#abtfluid>#abtrow>#abtcol>#abtcard>#abtbody>.abticondiv{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#abtfluid>#abtrow>#abtcol>#abtcard>#abtbody>.abticondiv>h1>.fa-solid{
+  color: white;
+  height: 50px;
+  padding-left: 100px;
+}
+
+/*< ============================ ABOUT END ========================================== >*/
+/* ======================================== PAGES TABLE ==================================== */
+.tableanchor a{
+  text-decoration: none;
+  color: #444242;
+}
+.tableanchor a:hover{
+  background-color: #f1f1f1 ;
+}
+.accordion-button {
+  background-color: #ffffff ;  
+  color: #070707 ;
+}
+
+.accordion-button.collapsed {
+  background-color: #f1f1f1 ;
+  color: #070707 ;
+}
+.accordion-button:hover {
+  background-color: #f1f1f1 ;
+  color: #070707 ;
+  box-shadow: none;
+}
+.accordion-button {
+  border: 1px solid #ddd;
+  box-shadow: none;
+}
+/* =============================CONTACT START ==================== */
+.container>.Contacthome{
+  background-color: #dddddd;
+  width: 400px;
+  height: 400px;
+}
+/* =============================CONTACT END ==================== */
