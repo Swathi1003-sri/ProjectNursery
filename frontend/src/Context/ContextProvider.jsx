@@ -9,7 +9,7 @@ const ContextProvider = ({children}) => {
 
     const navigate = useNavigate() 
 
-    const url = "https://backend-ck2g.onrender.com"
+    const url = "https://backend-0u3o.onrender.com"
 
 // < ============================ REGISTER ========================================== >
     var [ username , setUsername ] = useState("")
