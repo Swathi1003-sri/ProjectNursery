@@ -141,7 +141,7 @@ const App = () => {
             <Route path='/wateringacc' element={<ProtectPage><WateringAccessories/></ProtectPage>}/>
 {/* ======================================== ARRIVALDYNAMICPAGE ============================================= */}
 
-            <Route path='/product/:id' element={<ProtectPage><ArrivalProdDynamic/></ProtectPage>}/>
+            <Route path='/arrival/:id' element={<ProtectPage><ArrivalProdDynamic/></ProtectPage>}/>
 {/* ======================================== PRODUCTDYNAMICPAGE ============================================= */}
 
             <Route path='/product/:id' element={<ProtectPage><ProductDynamic/></ProtectPage>}/>
