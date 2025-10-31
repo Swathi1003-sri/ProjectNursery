@@ -7,6 +7,6 @@ export default defineConfig({
   server:{
     host:"0.0.0.0",
     port:5000,
-    allowedHosts:["admin-2vqg.onrender.com"]
+    allowedHosts:["admin-4eua.onrender.com"]
   }
 })
