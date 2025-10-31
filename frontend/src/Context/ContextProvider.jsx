@@ -9,7 +9,7 @@ const ContextProvider = ({children}) => {
 
     const navigate = useNavigate() 
 
-    const url = "https://localhost:5000"
+    const url = "http://localhost:5000"
 
 // < ============================ REGISTER ========================================== >
     var [ username , setUsername ] = useState("")
