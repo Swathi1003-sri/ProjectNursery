@@ -57,7 +57,11 @@
   justify-content: center;
 }
 
-
+@media (max-width: 768px) {
+  #formcontainer {
+    padding: 30px 25px;
+  }
+}
 /* =========================== Background Image End ==================== */
 
 
