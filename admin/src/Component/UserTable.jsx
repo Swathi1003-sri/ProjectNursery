@@ -8,7 +8,8 @@ const UserTable = () => {
   return (
     <>
         <div className="container">
-            <table className='table table-responsive table-primary mt-4 text-center'>
+            <div className="table-responsive">
+                <table className='table table-primary mt-4 text-center'>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -38,6 +39,8 @@ const UserTable = () => {
                     }
                 </tbody>
             </table>
+            </div>
+            
         </div>
     </>
   )
