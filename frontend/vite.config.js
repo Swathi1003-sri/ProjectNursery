@@ -9,5 +9,5 @@ export default defineConfig({
     port:5000,
     allowedHosts:["frontend-wgsm.onrender.com"]
   }
-  
+ 
 })
