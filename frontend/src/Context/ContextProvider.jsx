@@ -9,7 +9,7 @@ const ContextProvider = ({children}) => {
 
     const navigate = useNavigate() 
 
-    const url = "http://localhost:5000"
+    const url = "https://backend-dy9o.onrender.com"
 
 // < ============================ REGISTER ========================================== >
     var [ username , setUsername ] = useState("")

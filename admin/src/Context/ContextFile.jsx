@@ -4,7 +4,7 @@ import axios from 'axios'
 
 export const Mycontext = createContext()
 const ContextFile = ({children}) => {
-    const url = "http://localhost:5000"
+    const url = "https://backend-dy9o.onrender.com"
 
     var [ category , setCategory ] = useState("")
     var [ type , setType ] = useState("")
