@@ -8,10 +8,10 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="container-fluid pb-1" id='firstnav'>
-      <div className="container pt-2">
-        <div className="row">
-          <div className="col-lg-4 col-md-12 col-sm-12  ">
+    <div className="container-fluid pb-1" id='Socialfluid'>
+      <div className="container pt-2" id='Socialcont'>
+        <div className="row" id='Socialrow'>
+          <div className="col-lg-4 col-md-12 col-sm-12" id='Socialcol'>
             <div className="socialmedia">
               <i className="fa-brands fa-facebook pe-5" id='fb' onClick={fbFun}></i>
               <i className="fa-brands fa-twitter pe-5" id='twi' onClick={twitterFun}></i>
@@ -26,54 +26,42 @@ const Navbar = () => {
                 <p className='text-dark'>
                   <strong>
                 <span className='red'>50% OFFER </span>
-                </strong>
-              🌵 Indoor Plants 
-              🌿 Outdoor Plants 
-              🌸 flower Plants 
-              🌱 Seeds 
-              🌴 Areca Palm 
-              🌼 Peace Lily 
-              🍀 Jade Plant
-              
-              </p>
+                </strong>🌵 Indoor Plants 🌿 Outdoor Plants 🌸 flower Plants 🌱 Seeds 🌴 🌼 Peace Lily 🍀 Jade Plant</p>
               </div>
             </marquee>
           </div> 
           </div>
-          <div className="col-lg-4 col-md-12 col-sm-12 ">
-            <div className="Account pt-1 d-flex align-items-center justify-content-end">
-                <i className="fa-regular fa-user pe-2" id="accountDropdown" >
-                  <ul className='dropdown-menu'aria-labelledby="accountDropdown" >
-                    <li>
-                      <a href="/login">Login</a>
-                    </li>
+          <div className="col-lg-4 col-md-12 col-sm-12 d-flex justify-content-center justify-content-lg-end align-items-center">
+            <div className="Account position-relative  align-items-center gap-3">
+              <div className="user-dropdown">
+                <i className="fa-regular fa-user" id="accountDropdown"></i>
+                  <ul className="dropdown-menu" aria-labelledby="accountDropdown">
+                    <li><a href="/login">Login</a></li>
                     <hr />
-                    <li>
-                      <a href="/register">Create Account</a>
-                    </li>
-                </ul>
-              </i>
+                    <li><a href="/register">Create Account</a></li>
+                  </ul>
+              </div>
               <i className="fa-solid fa-power-off text-danger" id='lout' onClick={LogOutFun}></i>
             </div>
           </div>
         </div>
     </div>
-    </div>
+    </div> 
     {/* <hr /> */}
-      <div className="container-fluid sticky-top" >
+      
         <nav className="navbar navbar-expand-lg fixed-top navbar-light ">
           <div className="container">
-            <a className="navbar-brand text-light" href="#">
+            <a className="navbar-brand text-light" href="/home">
               <img src={ImageDatas.Logoimg}  width="30" height="26" className="d-inline-block align-text-top pe-1" alt="" />
               The Green World</a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="anchortags  ms-auto">
+              <div className="anchortags ms-auto">
                 <a href="/home" className='text-light'>HOME</a>
                 <div className="dropdiv">
-                  <a href="" className='text-light' id="accountDropdown">SHOP</a>
+                  <a href="#" className='text-light' id="accountDropdown">SHOP</a>
                   <ul className='dropdown-menu'aria-labelledby="accountDropdown" >
                     <li>
                       <a href="/indoor">Indoor Plants</a>
@@ -94,18 +82,19 @@ const Navbar = () => {
                 </div>
                 <a href="/about" className='text-light'>ABOUT</a>
                 <div className="dropdiv">
-                  <a href="faqs" className='text-light' id="accountDropdown">PAGES</a>
+                  <a href="#" className='text-light' id="accountDropdown">PAGES</a>
                   <ul className='dropdown-menu'aria-labelledby="accountDropdown" >
                     <li>
-                      <a href="/faqs" className='text-warning'>FAQ'S</a>
+                      <a href="/faqs" className='text-secondary'>FAQ'S</a>
                     </li>
                     <li>
-                      <a href="/contact" className='text-warning'>CONTACT US</a>
+                      <a href="/contact" className='text-secondary'>CONTACT US</a>
                     </li>
                 </ul>
                 </div>
               </div>
               <div className="icon d-flex ms-auto gap-3 align-items-center">
+                
                 <i className="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#searchModal"></i>
                 
                 <div className="cartdiv position-relative">
@@ -119,11 +108,21 @@ const Navbar = () => {
                 }
                 </div>
               </div>
+              <div className="userdiv d-block d-lg-none">
+                <div className="user-dropdown">
+                  <i className="fa-regular fa-user text-light ms-4" id="accountDropdown"></i>
+                    <ul className="dropdown-menu" aria-labelledby="accountDropdown">
+                    <li><a href="/login">Login</a></li>
+                    <hr />
+                    <li><a href="/register">Create Account</a></li>
+                  </ul>
+                </div>
+                <button className='btn btn-danger mt-2' onClick={LogOutFun}>LogOut</button>
+              </div>
             </div>
           </div>
         </nav>
-      </div> 
-
+        
 {/* ====================================================== SEARCH ICON MODAL =================================== */}
     <div className="modal fade" id="searchModal"  aria-labelledby="searchModalLabel" aria-hidden="true">
   <div className="modal-dialog modal-fullscreen">
@@ -169,7 +168,8 @@ const Navbar = () => {
     <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div className="offcanvas-body">
-          <table className='table table-responsive table-primary text-center'>
+    <div className="table-responsive">
+          <table className='table  table-primary text-center'>
           <thead>
             <tr>
               <th>Image</th>
@@ -207,7 +207,8 @@ const Navbar = () => {
               <td colSpan={6}><h6 className='text-end text-success'>Total :₹{grandTotal}</h6></td>
             </tr>
           </tfoot>
-    </table>
+      </table>
+    </div>   
   </div>
 </div>
     </>

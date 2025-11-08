@@ -19,7 +19,7 @@ const ArrivalSection = () => {
                     allDatas.filter(a =>a.category === "arrival").map((value,index)=>{
                         return(
                             <div className="col-lg-3 col-md-6 col-sm-12"  id='productcol' key={index}>
-                                <div className="card mt-4" height={500} width={500} id='productcard' onClick={()=>navigate(`/product/${value.id}`)} data-aos="zoom-in" data-aos-offset="100" data-aos-duration="2000">
+                                <div className="card mt-4" height={500} width={500} id='productcard' onClick={()=>navigate(`/arrival/${value.id}`)} data-aos="zoom-in" data-aos-offset="100" data-aos-duration="2000">
                                     <img src={value.img} id='productimg' height={200} alt="" />
                                     <div className="icondiv" id='producticon'>
                                             <i className="fa-solid fa-magnifying-glass" data-bs-toggle="modal" data-bs-target="#searchModal" id='iconbg'></i>

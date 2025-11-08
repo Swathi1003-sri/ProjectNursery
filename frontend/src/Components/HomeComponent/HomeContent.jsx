@@ -22,11 +22,11 @@ const HomeContent = () => {
                         </div>
                     </div>
                 </div>
-                <div className="textcontent d-flex flex-column align-items-center justify-content-center text-center p-3" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
-                        <h4 className='fw-bold'>Welcome To The Green World!</h4>
-                        <p>Our nursery plants bring fresh greenery, beauty, and life to any space.</p>
+                <div className="textcontent d-flex flex-column align-items-center justify-content-center" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
+                    <h4 className='fw-bold text-center'>Welcome To The Green World!</h4>
+                    <p>Our nursery plants bring fresh greenery, beauty, and life to any space.</p>
                         <div className="btnsection p-3">
-                            <a href="" className='btn btn-dark me-2'>Read More</a>
+                            <a href="/Readmore" className='btn btn-dark me-2'>Read More</a>
                             <a href="/contact" className='btn btn-dark'>Contact Us</a>
                         </div>
                 </div>

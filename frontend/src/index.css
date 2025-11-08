@@ -1,7 +1,6 @@
 *{
   margin: 0;
   font-family: "Dancing Script"
- 
 }
 /* =========================== Intro Background Image Start ==================== */
 #backimage{
@@ -12,7 +11,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 #backimage>.container>.homecont{
   background: #ffffffcc;
@@ -46,153 +44,205 @@
 #backimage>.container>.homecont>#regis>.btn:hover {
   background-color: #0fa535;
 }
-/* ===============================Form Start======================================== */
-#backimage>#formcontainer{
-  background: #ffffffcc;
-  padding: 50px 0px;
-  max-height: 800px;
-  max-width: 700px;
-}
-#backimage>#formcontainer>.row{
+/* =========================== Intro Background Image END ==================== */
+
+/* =============================== REGISTER & LOGIN Form Start======================================== */
+
+#formbackimage {
+  background-image: url("./assets/FrontendImages/BackgImage/Backimg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+#formcontainer {
+  position: relative;
+  z-index: 2;
+}
+#formcol {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+#formcol:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.input-field {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+.input-field:focus {
+  border-color: #198754;
+  box-shadow: 0 0 5px rgba(25, 135, 84, 0.3);
+}
+#formcol h1 {
+  font-weight: 700;
+  color: #198754;
+}
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  #formcol {
+    width: 80%;
+    padding: 35px 25px;
+  }
 }
 
 @media (max-width: 768px) {
-  #formcontainer {
-    padding: 30px 25px;
+  #formcol {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  #formcol h1 {
+    font-size: 1.8rem;
   }
 }
-/* =========================== Background Image End ==================== */
 
+@media (max-width: 480px) {
+  #formcol {
+    width: 95%;
+    padding: 25px 15px;
+  }
 
-/* =================================== NAVBAR START ================================ */
-/*< ============================ SOCIAL ICON START ========================================== >*/
-.container-fluid>.container>.row>.col-lg-4>.socialmedia{
-  color: #747070;
+  #formcol h1 {
+    font-size: 1.6rem;
+  }
+
+  .reglogdiv {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
-.container-fluid>.container>.row>.col-lg-4>.socialmedia>#fb:hover{
+
+
+
+/* =============================== REGISTER & LOGIN Form END======================================== */
+
+/* =========================================== NAVBAR START ============================================== */
+ /* < ========================== SOCIAL ICON START ===================================== > */
+.socialmedia{
+  color: #747070;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 11px;
+  margin-left: -100px;  
+}
+#fb:hover{
   color:  #4911cc;
 }
-.container-fluid>.container>.row>.col-lg-4>.socialmedia>#twi:hover{
+#twi:hover{
   color:  skyblue;
 }
-.container-fluid>.container>.row>.col-lg-4>.socialmedia>#ins:hover{
+#ins:hover{
   color:  palevioletred;
 }
-.container-fluid>.container>.row>.col-lg-4>.socialmedia>#ut:hover{
+#ut:hover{
   color:  red;
 }
-@media (max-width: 575.98px) {
-  .socialmedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0;
-  }
-  .socialmedia i {
-    margin-right: 15px;
-    font-size: 24px;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .socialmedia {
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .socialmedia i {
-    margin-right: 20px;
-    font-size: 2px;
-  }
-  .socialmedia>#fb:hover{
-  color:  #4911cc;
-}
-.socialmedia>#twi:hover{
-  color:  skyblue;
-}
-.socialmedia>#ins:hover{
-  color:  #df054d;
-}
-.socialmedia>#ut:hover{
-  color:  red;
-}
-}
+
 /*< ============================ SOCIAL ICON END ========================================== >*/
 
 /*< ============================ MARQUEE START ========================================== >*/
-
 .marqueediv {
   width: 69vw;   
   margin-left: calc(-30vw + 50%); 
   margin-right: calc(-90vw + 50%);  
-  height: 20px;
+  height: 20px; 
 }
-.marqueediv #marqueetag .marqueecont .text-dark .red{
+.marqueecont .red{
   color: red;
 }
-
 /*< ============================ MARQUEE END ========================================== >*/
 /*< ============================ ACCOUNT ICON START ========================================== >*/
 
-.container-fluid>.container>.row>.col-lg-4>.Account{
+.Account{
   color: #747070;
   display: flex;
   gap: 16px;
+  position: relative;
+  margin-right: -90px;
 }
-.container-fluid>.container>.row>.col-lg-4>.Account{
+.user-dropdown {
   position: relative;
 }
-.container-fluid>.container>.row>.col-lg-4>.Account>.dropdown-menu {
+.Account>.user-dropdown>.dropdown-menu {
   display: none;
   position: absolute;
-  list-style: none;   
+  top: 100%;
+  /* right: 0; */
+  left: 50%;                     
+  transform: translateX(-60%); 
+  list-style: none;
+  background: #fff;
+  font-size: 13px;
+  box-shadow: 0px 2px 6px #00000033;
+  width: auto !important;
+  min-width: 150px !important;
+  border-radius: 5px;
+  z-index: 1000;
+  padding: 5px 0;
 }
-.container-fluid>.container>.row>.col-lg-4>.Account>.fa-regular:hover>.dropdown-menu {
+.user-dropdown:hover .dropdown-menu {
   display: block;
   position: absolute;
-  font-size: 12px;
+  font-size: 15px;
   margin-right: 50px;
   box-shadow: 0px 2px 5px #444242;
   min-width: 105px;
   z-index: 1050;
 }
-
-
-.container-fluid>.container>.row>.col-lg-4>.Account>.fa-regular>.dropdown-menu>li>a{
+.user-dropdown>.dropdown-menu>li>a{
   display: block;
   color: #747070;
   text-decoration: none;
-  padding: 4px 6px; 
+  transition: 0.3s;
+  padding: 8px 14px; 
 }
-.container-fluid>.container>.row>.col-lg-4>.Account>.fa-regular>.dropdown-menu>li>a:hover {
+.user-dropdown .dropdown-menu li a:hover {
   color: #0dca0d;
+  background: #f9f9f9;
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media(max-width:991px){
+  .socialmedia{
+    display: none;
+  }
+  .marqueecont {
+    font-size: 13px;
+  }
   .Account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    /* justify-content: center;
+    margin-top: 8px; */
+    display: none;
   }
-  .Account i {
-    font-size: 28px;
-  }
-}
-@media (min-width: 576px) and (max-width: 768px) {
-  .Account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
-  .Account i {
-    font-size: 28px;
+
+  .user-dropdown .dropdown-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
+
 /*< ============================ ACCOUNT ICON END ========================================== >*/
-.quantitydiv button {
+/* .quantitydiv button {
   min-width: 40px;
   height: 40px;
   font-size: 18px;
@@ -202,57 +252,68 @@
 .quantitydiv input {
   height: 40px;
   font-size: 16px;
-}
+} */
+
+/*  */
+
+
+
 
 /*< ============================  NAV2 START ========================================== >*/
 
-.sticky-top {
+ .navbar{
+  position: sticky;
   background-color: #0a6e05;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* keep navbar on top */
+  z-index: 1000;
+  width: 100%;
 }
-
-.container-fluid>.navbar{
-  position: sticky;
- 
+  .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white !important;
+  margin-left: 0 !important; 
 }
-
-.container-fluid>.navbar>.container>.collapse>.icon{
-  color: white;
+  .navbar-brand img {
+  margin-right: 8px;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags{
-  color: white;
-}
-
-
-.container-fluid>.navbar>.container>.collapse>.anchortags{
+.navbar>.container>.collapse>.anchortags{
   position: relative;
-}
-.container-fluid>.navbar>.container>.collapse>.anchortags{
   display: flex;
   gap: 2rem;
-  margin-left: 16rem; 
+  margin-left: 16rem;
+  color: white;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>a{
+
+.navbar>.container>.collapse>.icon{
+  margin-right: -90px;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar>.container>.navbar-brand{
+  margin-left: -60px;
+}
+.navbar>.container>.collapse>.anchortags>a{
   justify-content: center;
   text-decoration: none;
   color: #070707;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>a:hover {
+.navbar>.container>.collapse>.anchortags>a:hover {
   color: #0dca0d;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>#accountDropdown{
+.navbar>.container>.collapse>.anchortags>.dropdiv>#accountDropdown{
   text-decoration: none;
   color: #070707;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>#accountDropdown:hover{
+.navbar>.container>.collapse>.anchortags>.dropdiv>#accountDropdown:hover{
   color: #0dca0d;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv{
+.navbar>.container>.collapse>.anchortags>.dropdiv{
   position: relative;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu {
+.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu {
   display: none;
   position: absolute;
   list-style: none;
@@ -263,79 +324,66 @@
   z-index: 1000;  
   
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv:hover>.dropdown-menu {
+.navbar>.container>.collapse>.anchortags>.dropdiv:hover>.dropdown-menu {
   display: block;
   margin-right: 50px;
   box-shadow: 0px 0px 2px #444242;
   max-width: 20px;
 
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu>li>a{
+.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu>li>a{
   display: block;
   padding: 8px 12px;
   color: #747070;
   text-decoration: none;
 }
-.container-fluid>.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu>li>a:hover {
+.navbar>.container>.collapse>.anchortags>.dropdiv>.dropdown-menu>li>a:hover {
   color: #0dca0d;
+} 
+
+
+@media(max-width:991px){
+  .navbar.fixed-top {
+    position: relative !important;
+  }
+.navbar-brand {
+  justify-content: flex-start;
+  margin-left: 5px !important;
+  font-size: 1rem;
 }
-.container-fluid>.navbar>.container>.collapse>.icon>#heart:hover{
-  color: red;
+.navbar>.container>.collapse>.anchortags{
+  padding-top: 10px;
+  flex-direction: column;
+  gap: 1rem;
 }
-
-@media (max-width: 991px) {
-  .anchortags {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .anchortags > a,
-  .anchortags > .dropdiv > a {
-    display: block !important;
-    width: 100%;
-    padding: 10px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ffffff33; 
-  }
-
-  
-  .icon {
-    display: flex !important;
-    flex-direction: column !important;  
-    align-items: flex-start !important;
-    gap: 12px; 
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .icon i,
-  .icon .cartdiv {
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    text-align: left;
-    border-bottom: 1px solid #ffffff33;
-  }
+.navbar>.container>.collapse>.icon{
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-right: 300px;
+  gap: 1rem;
 }
-
-
-
-/*< ============================ MODAL ========================================== >*/
+.navbar>.container>.collapse>.userdiv{
+  justify-content: center;
+  display: block;
+  flex-direction: column;
+  padding-top: 10px;
+  margin-right: 300px;
+  gap: 1rem;
+}
+} 
+/*< ============================ SEARCH MODAL START ========================================== >*/
 
 .modal>.modal-dialog>.modal-content>.modal-body>a{
   text-decoration: none;
   color: #747070;
 }
-
 .offcanvas{
   width: 100%;
 }
+/*< ============================ SEARCH MODAL END ========================================== >*/
 
 /*< ============================ NAVBAR END ========================================== >*/
-
 
 /*< ============================ FOOTER START ========================================== >*/
 
@@ -390,78 +438,131 @@
 
 /*< ============================ HOME CONTENT  START ========================================== >*/
 
-#Contentfrt>{
+#Contentfrt { 
   position: relative;
 }
-#Contentfrt>.img-fluid{
+
+#Contentfrt > .img-fluid {
   position: relative;
   z-index: 0;
 }
 
- @media (max-width: 576px) {
-  .textcontent h4 {
-    margin-top: 50px;
-    font-size: 18px;
-  }
-  .textcontent p {
-    font-size: 14px;
-    line-height: 1.4;
-  }
-  .btnsection a {
-    min-width: 40px;
-    margin-bottom: 30px;
-  }
-  .btnsection .btn {
-    min-width: 50px;  
-    font-size: 8px;
-    padding: 4px 10px;
-  }
-}
-
-#Contentfrt>.container{
+#Contentfrt > .container {
   position: absolute;
-  top: 120px;       
-  left: 0;
-  width: 100%;
-  z-index: 2; 
-}
-#Contentfrt>#imgrow2{
-  position: absolute;
-  top: 116px;       
+  top: 15px;       
   left: 0;
   width: 100%;
   z-index: 2; 
 }
 
-#Contentfrt>.container>.row>.col-lg-6>.sildeimg1>.Image1{
-    margin-left: 50px;
+#Contentfrt > #imgrow2 {
+  position: absolute;
+  top: 52px;       
+  left: 0;
+  width: 100%;
+  z-index: 2; 
 }
-#Contentfrt>.container>.row>.col-lg-6>.sildeimg2{
+
+/* Desktop image positioning */
+#Contentfrt .sildeimg1 .Image1 {
+  margin-left: 70px;
+}
+#Contentfrt .sildeimg2 {
   display: flex;
   justify-content: end;
 }
-#Contentfrt>.container>.row>.col-lg-6>.sildeimg2>.Image2{
-  margin-right: 70px;
+#Contentfrt .sildeimg2 .Image2 {
+  margin-right: 10px;
 }
-
-#Contentfrt>#imgrow2{
+#Contentfrt .textcontent {
+  margin-left: 230px;
+}
+#Contentfrt #imgrow2 {
   padding-top: 150px;
 }
-
-#Contentfrt>#imgrow2>#rowcol2{
+#Contentfrt #rowcol2 {
   padding-top: 150px;
 }
-#Contentfrt>#imgrow2>#rowcol2>.sildeimg3>.Image3{
-   margin-left: 10px;
+#Contentfrt #rowcol2 .sildeimg3 .Image3 {
+  margin-left: 10px;
 }
-#Contentfrt>#imgrow2>.col-lg-6>.sildeimg4{
-    display: flex;
-    justify-content: end; 
+#Contentfrt #imgrow2 .sildeimg4 {
+  display: flex;
+  justify-content: end; 
 }
-#Contentfrt>#imgrow2>.col-lg-6>.sildeimg4>.Image4{
+#Contentfrt #imgrow2 .sildeimg4 .Image4 {
   height: 373px;
   margin-left: 90px;
 }
+
+.textcontent {
+  position: relative;
+  z-index: 10; 
+  color: black;
+}
+
+#Contentfrt img {
+  position: relative;  
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  #Contentfrt {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #Contentfrt > .img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Keep text over the image */
+  #Contentfrt > .container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    z-index: 2;
+  }
+
+  #Contentfrt .textcontent {
+    margin: 0;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  #Contentfrt .textcontent h4 {
+    
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  #Contentfrt .textcontent p {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .btnsection {
+    display: none;
+    
+  }
+  #Contentfrt img {
+    width: 100%;
+    height: auto;
+  }
+  #Contentfrt #imgrow2 {
+    position: relative;
+    top: 0;
+    padding-top: 30px;
+  }
+}
+
+
+
 /*< ============================ HOME CONTENT  END ========================================== >*/
 
 
@@ -507,11 +608,31 @@
 
 
 
+
 /*< ============================ ARRIVAL START ========================================== >*/
-#productcontainer>#productrow>#productcol>#productcard{
+ #productcontainer>#productrow>#productcol>#productcard{
   position: relative;
   overflow: hidden;
   border-radius: 5px;
+}
+#iconbg {
+  background-color: #e9e6e6e6;
+  color: #0e0d0d;
+  padding: 20px;
+  border-radius: 50%; 
+  font-size: 18px;
+  width: 45px;        
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#iconbg:hover {
+  background-color: #27ae60;
+  transform: scale(1.1);
+  color: white;
 }
 
 #productcontainer>#productrow>#productcol>#productcard>#producticon{
@@ -521,10 +642,10 @@
 }
 
 #productcontainer>#productrow>#productcol>#productcard:hover>#producticon{
- 
   display: flex;
   gap: 5px;
   padding: 10px 200px;
+  
 }
 
 #productcontainer>#productrow>#productcol>#productcard>#productimg{
@@ -535,47 +656,10 @@
 #productcontainer>#productrow>#productcol>#productcard:hover>#productimg{
   transform: scale(1.2);       
   transition: transform 0.7s ease-in-out; 
-}
-/* @media (max-width: 576px){
-  #productcol>#productcard{
-  position: relative;
-}
-#productcard>#producticon{
-  position: absolute;
-  display: none;
-  flex-direction: column;
-}
-#productcard:hover>#producticon{
- 
-  display: flex;
-  gap: 5px;
-  padding: 10px 200px;
+} 
 
-}
-#productcard:hover>#producticon>#iconbg{
-  background-color: #f5f5f5;
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-} */
 
-#productcontainer>#productrow>#productcol>#productcard:hover>#producticon>#iconbg{
-  background-color: #f5f5f5;
-  height: 40px;
-  width: 40px;
-  border-radius: 50px;
-  border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
+
 /*< ============================ ARRIVAL END ========================================== >*/
 /* /===================================================Type Section =========================== */
 #typecol #typecard {
@@ -592,7 +676,6 @@
 
 #typecard:hover #typeicon {
   display: flex;
-
   gap: 5px;
   padding: 10px 200px;
 }
@@ -646,6 +729,10 @@
 
 /*< ============================ SWIPERBLOG START ========================================== >*/
 
+.blogswiper {
+  padding-bottom: 40px;
+}
+
 .sildeimgdiv {
   background-color: #d1c4c4;
   height: 100px;
@@ -654,10 +741,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  margin-left: 150px;
-  
+  margin: 0 auto; 
 }
-.sildeimgdiv:hover{
+
+.sildeimgdiv:hover {
   background-color: #0a6e05;
 }
 
@@ -665,11 +752,41 @@
 
 /*< ============================ SWIPERBLOG END ========================================== >*/
 /*< ============================ READMORE START ========================================== >*/
-.container-fluid>.row>.col-lg-6>.readcont{
+
+#readfluid > #readcontainer > #readrow > #readcol2 > .readcont2 {
   height: 450px;
   width: 560px;
-  background-color: #e9dada;
+  background-color: #c9bcbc;
+  border-radius: 10px;
+  overflow-y: auto;
 }
+
+@media (max-width: 991px) {
+  #readfluid > #readcontainer > #readrow > #readcol2 > .readcont2 {
+    width: 600px;
+    height: auto;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #readfluid > #readcontainer > #readrow > #readcol2 > .readcont2 {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .readpara p {
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 /*< ============================ READMORE END ========================================== >*/
 
@@ -692,7 +809,7 @@
 }
 
 /*< ============================ ABOUT END ========================================== >*/
-/* ======================================== PAGES TABLE ==================================== */
+/* ========================================FAQS PAGES TABLE ==================================== */
 .tableanchor a{
   text-decoration: none;
   color: #444242;

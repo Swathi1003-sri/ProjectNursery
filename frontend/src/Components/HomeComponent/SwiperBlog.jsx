@@ -15,7 +15,9 @@ const SwiperBlog = () => {
       </div>
       <div className="conatiner">
         <div className="row" data-aos="zoom-in-down" data-aos-duration='2000'>
-          <Swiper slidesPerView ={3} spaceBetween={20} pagination={false}modules={[Pagination, Navigation, Autoplay]} navigation={false} autoplay={{delay:2000}} loop={true} className='blogswiper'>
+          <Swiper slidesPerView ={3} spaceBetween={20} pagination={false} modules={[Pagination, Navigation, Autoplay]} navigation={false} autoplay={{delay:2000}} loop={true} className='blogswiper'breakpoints={{
+                0: { slidesPerView: 1 }, 576: { slidesPerView: 1 },768: { slidesPerView: 2 },992: { slidesPerView: 3 }    
+              }}>
             <div className="blogcol col-lg-3 col-md-6 col-sm-12">
               {
                 allDatas.filter(a => a.category === "LogCard").map((value, index) => (

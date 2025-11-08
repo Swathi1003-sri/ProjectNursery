@@ -12,7 +12,8 @@ const ProductTable = () => {
   return (
     <>
         <div className="container">
-            <table className='table table-responsive table-primary mt-5 text-center'>
+          <div className="table-responsive">
+              <table className='table table-responsive table-primary mt-5 text-center'>
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -50,6 +51,8 @@ const ProductTable = () => {
                 }
             </tbody>
             </table>
+          </div>
+            
         </div>
 
 <div className="modal fade" id="updateProduct"  aria-labelledby="updateProductLabel" aria-hidden="true">
