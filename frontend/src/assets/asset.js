@@ -45,11 +45,7 @@ import Img6 from './FrontendImages/Arrivalimg/Spade.jpg'
 import Img7 from './FrontendImages/Arrivalimg/Vermicompost.jfif'
 import Img8 from './FrontendImages/Arrivalimg/Spinach.webp'
 // < ============================SHOP IMAGE ========================================== >
-import Img9 from './FrontendImages/ShopImages/Indoor/Snake.jpg'
-import Img10 from './FrontendImages/ShopImages/Indoor/Rubber.jpg'
-import Img11 from './FrontendImages/ShopImages/Indoor/Peacelily.jpg'
-import Img12 from './FrontendImages/ShopImages/Indoor/Money.jpg'
-import Img13 from './FrontendImages/ShopImages/Indoor/Areca.jpg'
+
 // < ============================ABOUT IMAGE ========================================== >
 import AbtImg1 from './FrontendImages/AboutPage/WelcomeImg.jpg'
 import AbtImg2 from './FrontendImages/AboutPage/AbotBg.jpg'
@@ -97,11 +93,7 @@ export const ImageDatas ={
                                 Img7,
                                 Img8,
 // < ============================SHOP IMAGE ========================================== >
-                                Img9,
-                                Img10,
-                                Img11,
-                                Img12,
-                                Img13,
+                                
                                 Img21,
                                 Img22,
                                 Img23,

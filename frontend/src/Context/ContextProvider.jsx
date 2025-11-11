@@ -7,7 +7,10 @@ import { allDatas } from '../assets/asset'
 export const ContextFile = createContext()
 const ContextProvider = ({children}) => {
 
-    const navigate = useNavigate() 
+    const navigate = useNavigate()
+    
+      // const url = "http://localhost:5000"
+    
 
     const url = "https://backend-dy9o.onrender.com"
 
