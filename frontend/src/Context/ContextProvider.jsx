@@ -162,7 +162,7 @@ const ContextProvider = ({children}) => {
         try{
             const productList = await axios.get(`${url}/product/productget?page=${pageNumber}&limit=20`)
             setDataProduct(productList.data.products)
-            setTotalPages(res.data.totalPages);
+            setTotalPages(productList.data.totalPages);
             console.log(productList.data)
         }
         catch(err){
