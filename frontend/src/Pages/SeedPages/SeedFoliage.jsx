@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { ContextFile } from '../../Context/ContextProvider'
 import Navbar from '../../Components/CommonComponent/Navbar'
 import Footer from '../../Components/CommonComponent/Footer'
+import Pagination from '../../Components/CommonComponent/Pagination'
 
 const SeedFoliage = () => {
     const {dataProduct,navigate} = useContext(ContextFile)
@@ -48,6 +49,7 @@ const SeedFoliage = () => {
             }
 
         </div>
+        <Pagination/>
     </div>
     
     <Footer/>

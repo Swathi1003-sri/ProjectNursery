@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ContextFile } from '../../Context/ContextProvider'
+import Pagination from '../CommonComponent/Pagination'
 
 const Accessories = () => {
     
@@ -59,8 +60,9 @@ const Accessories = () => {
                         )
                     })
                 }
-                    </div>
-                </div>
+            </div>
+            <Pagination/>
+        </div>
     </>
   )
 }

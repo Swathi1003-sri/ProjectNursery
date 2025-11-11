@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ContextFile } from '../../Context/ContextProvider'
+import Pagination from '../CommonComponent/Pagination'
 
 const Seeds = () => {
     const {dataProduct,navigate} = useContext(ContextFile)
@@ -54,6 +55,7 @@ const Seeds = () => {
                             })
                         }
                     </div>
+                    <Pagination/>
                 </div>
     </>
   )

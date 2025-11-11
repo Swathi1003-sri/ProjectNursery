@@ -15,6 +15,11 @@ const app = express()
 app.use(express.json({limit:"100mb"}))
 
 // ===================================== CORS =========================================
+// const cors = require("cors")
+// app.use(cors())
+
+
+
 
 const cors = require("cors")
 app.use(cors({

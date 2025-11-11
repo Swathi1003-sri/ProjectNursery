@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ContextFile } from '../../Context/ContextProvider'
+import Pagination from '../CommonComponent/Pagination'
 
 const Outdoorplants = () => {
   const {dataProduct , navigate} = useContext(ContextFile)
@@ -56,6 +57,7 @@ const Outdoorplants = () => {
                             })
                         }
                     </div>
+                    <Pagination/>
                 </div>
     </>
   )

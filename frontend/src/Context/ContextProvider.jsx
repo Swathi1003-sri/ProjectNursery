@@ -158,6 +158,21 @@ const ContextProvider = ({children}) => {
     const SearchFun = () =>{
         setSearchFilterData(dataProduct.filter(a=>a.type.toLowerCase().includes(searchInt.toLowerCase()) || a.price.toString().includes(searchInt.toString())))
     }
+// const FetchProductdata = async()=>{
+//         try{
+//             const productList = await axios.get(`${url}/product/productget`)
+//             setDataProduct(productList.data)
+            
+//             console.log(productList.data)
+//         }
+//         catch(err){
+//             console.log(`Error name : ${err.name} , Error Message : ${err.message}`)
+//         }
+//     }
+//     useEffect(()=>{
+//         FetchProductdata()    
+//     },[])
+
     const FetchProductdata = async(pageNumber = 1)=>{
         try{
             const productList = await axios.get(`${url}/product/productget?page=${pageNumber}&limit=20`)

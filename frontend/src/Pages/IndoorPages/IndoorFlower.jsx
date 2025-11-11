@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Navbar from '../../Components/CommonComponent/Navbar'
 import { ContextFile } from '../../Context/ContextProvider'
 import Footer from '../../Components/CommonComponent/Footer'
+import Pagination from '../../Components/CommonComponent/Pagination'
 
 const IndoorFlower = () => {
     const{dataProduct,navigate } = useContext(ContextFile)
@@ -47,6 +48,7 @@ const IndoorFlower = () => {
                         )
                     } 
                 </div>
+                <Pagination/>
             </div>   
 
     <Footer/>

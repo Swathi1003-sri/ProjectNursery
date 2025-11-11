@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Navbar from '../../Components/CommonComponent/Navbar'
 import Footer from '../../Components/CommonComponent/Footer'
 import { ContextFile } from '../../Context/ContextProvider'
+import Pagination from '../../Components/CommonComponent/Pagination'
 
 const CareAndSupport = () => {
     const {dataProduct, navigate} = useContext(ContextFile)
@@ -42,6 +43,7 @@ const CareAndSupport = () => {
                ))
             }
             </div>
+            <Pagination/>
         </div>
 
 

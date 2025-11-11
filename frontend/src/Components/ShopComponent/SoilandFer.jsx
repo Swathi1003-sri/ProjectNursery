@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { ContextFile } from '../../Context/ContextProvider'
+import Pagination from '../CommonComponent/Pagination'
 
 const SoilandFer = () => {
 
@@ -56,6 +57,7 @@ const SoilandFer = () => {
                             })
                         }
                     </div>
+                    <Pagination/>
                 </div>
     </>
   )
