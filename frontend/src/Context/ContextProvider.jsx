@@ -314,10 +314,10 @@ const FetchProductdata = async()=>{
         hoverImg,
         mouseEnter,
         mouseLeave,
-        handleNext,
-        handlePrev,
-        page,
-        totalPages
+        // handleNext,
+        // handlePrev,
+        // page,
+        // totalPages
 
         
     }
