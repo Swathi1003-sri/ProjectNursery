@@ -44,7 +44,7 @@ const Tool = () => {
                 )
             }
         </div>
-        <Pagination/>
+        {/* <Pagination/> */}
     </div>
 
     <Footer/>

@@ -50,7 +50,7 @@ const Liquid = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
     </div>
 
 

@@ -42,7 +42,7 @@ const ContainerandStorage = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
             </div>  
              
         <Footer/>

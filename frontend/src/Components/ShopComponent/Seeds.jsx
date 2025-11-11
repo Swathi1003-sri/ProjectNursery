@@ -55,7 +55,7 @@ const Seeds = () => {
                             })
                         }
                     </div>
-                    <Pagination/>
+                    {/* <Pagination/> */}
                 </div>
     </>
   )

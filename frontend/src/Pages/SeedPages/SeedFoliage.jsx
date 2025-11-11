@@ -49,7 +49,7 @@ const SeedFoliage = () => {
             }
 
         </div>
-        <Pagination/>
+        {/* <Pagination/> */}
     </div>
     
     <Footer/>

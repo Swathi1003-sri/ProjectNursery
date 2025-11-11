@@ -15,23 +15,8 @@ const app = express()
 app.use(express.json({limit:"100mb"}))
 
 // ===================================== CORS =========================================
-// const cors = require("cors")
-// app.use(cors())
-
-
-
-
 const cors = require("cors")
-app.use(cors({
-  origin: [
-    "https://frontend-wgsm.onrender.com", 
-    "http://localhost:5000"              
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
-
-
+app.use(cors())
 
 // ===================================== PRODUCT ROUTER REQUIRE =========================================
 

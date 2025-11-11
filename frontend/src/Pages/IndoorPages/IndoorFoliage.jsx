@@ -48,7 +48,7 @@ const IndoorFoliage = () => {
                 )
             }   
         </div>
-        <Pagination/>    
+        {/* <Pagination/>     */}
     </div> 
 
 

@@ -43,7 +43,7 @@ const CareAndSupport = () => {
                ))
             }
             </div>
-            <Pagination/>
+            {/* <Pagination/> */}
         </div>
 
 

@@ -50,7 +50,7 @@ const Tree = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
            </div>
 
         <Footer/>

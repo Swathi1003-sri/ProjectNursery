@@ -50,7 +50,7 @@ const SeedVeg = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
 
     </div> 
 

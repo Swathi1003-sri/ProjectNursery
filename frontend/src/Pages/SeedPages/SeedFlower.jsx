@@ -49,7 +49,7 @@ const SeedFlower = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
     </div>
 
     <Footer/>

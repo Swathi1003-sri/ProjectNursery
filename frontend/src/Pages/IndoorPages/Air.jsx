@@ -47,7 +47,7 @@ const Air = () => {
                 )
             }
             </div>
-            <Pagination/>
+            {/* <Pagination/> */}
         </div>
 
 

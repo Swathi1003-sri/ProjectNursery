@@ -61,7 +61,7 @@ const Accessories = () => {
                     })
                 }
             </div>
-            <Pagination/>
+            {/* <Pagination/> */}
         </div>
     </>
   )

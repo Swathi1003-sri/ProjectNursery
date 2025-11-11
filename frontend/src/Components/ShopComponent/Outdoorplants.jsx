@@ -57,7 +57,7 @@ const Outdoorplants = () => {
                             })
                         }
                     </div>
-                    <Pagination/>
+                    {/* <Pagination/> */}
                 </div>
     </>
   )

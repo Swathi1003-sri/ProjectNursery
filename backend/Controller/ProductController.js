@@ -21,50 +21,16 @@ const addProduct = async(req , res) =>{
 
 // ===================================== GET PRODUCT START =========================================
 
-// const getProduct = async(req,res)=>{
-//     try{
-//         var productList = await ProductModel.find()
-//         res.status(200).send(productList)
-//     }
-//     catch(err){
-//         res.status(404).send(`Error Name:${err.name} , Error Message:${err.message}`)
-//     }
-// }
+const getProduct = async(req,res)=>{
+    try{
+        var productList = await ProductModel.find()
+        res.status(200).send(productList)
+    }
+    catch(err){
+        res.status(404).send(`Error Name:${err.name} , Error Message:${err.message}`)
+    }
+}
 
-const getProduct = async (req, res) => {
-  try {
-    // 🧮 Pagination setup
-    const page = parseInt(req.query.page) || 1;    // Default page = 1
-    const limit = parseInt(req.query.limit) || 20; // Default limit = 20 items
-    const skip = (page - 1) * limit;
-
-    // 🎯 Fetch limited fields (avoid heavy memory)
-    const products = await ProductModel.find({})
-      .skip(skip)
-      .limit(limit)
-      .select("name price category imageURL description"); // தேவையான fields மட்டும்
-
-    // 📊 Total count (for frontend pagination)
-    const total = await ProductModel.countDocuments();
-
-    // ✅ Send structured response
-    res.status(200).json({
-      success: true,
-      page,
-      totalPages: Math.ceil(total / limit),
-      count: products.length,
-      products,
-    });
-
-  } catch (err) {
-    console.error("Error fetching products:", err);
-    res.status(500).json({
-      success: false,
-      message: `Error Name: ${err.name}`,
-      error: err.message,
-    });
-  }
-};
 
 
 // ===================================== GET PRODUCT END =========================================

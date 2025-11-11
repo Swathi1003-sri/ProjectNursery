@@ -47,7 +47,7 @@ const OutFlower = () => {
                 )
             }
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
             </div>
 
 

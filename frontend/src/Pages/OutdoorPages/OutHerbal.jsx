@@ -45,7 +45,7 @@ const OutHerbal = () => {
                 )
             } 
         </div>
-        <Pagination/>
+        {/* <Pagination/> */}
     </div>
 
 

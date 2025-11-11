@@ -57,7 +57,7 @@ const SoilandFer = () => {
                             })
                         }
                     </div>
-                    <Pagination/>
+                    {/* <Pagination/> */}
                 </div>
     </>
   )

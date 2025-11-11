@@ -44,7 +44,7 @@ const SafetyandComfort = () => {
                 )
             }
             </div>
-            <Pagination/>
+            {/* <Pagination/> */}
          </div>
 
     <Footer/>

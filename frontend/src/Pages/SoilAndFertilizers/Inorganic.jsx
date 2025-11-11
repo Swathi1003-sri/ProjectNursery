@@ -50,7 +50,7 @@ const Inorganic = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
     </div>
 
 

@@ -50,7 +50,7 @@ const Organic = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
     </div>
 
       <Footer/>

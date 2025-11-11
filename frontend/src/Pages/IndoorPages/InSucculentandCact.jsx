@@ -50,7 +50,7 @@ const InSucculentandCact = () => {
                 )
             }    
         </div>
-        <Pagination/>
+        {/* <Pagination/> */}
     </div>
 
 

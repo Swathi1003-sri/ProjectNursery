@@ -55,7 +55,7 @@ const Indoorplants = () => {
                 })
             }
         </div>
-        <Pagination/>
+        {/* <Pagination/> */}
 
         </div>
             </>

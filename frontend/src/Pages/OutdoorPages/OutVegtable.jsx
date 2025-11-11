@@ -49,7 +49,7 @@ const OutVegtable = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
             </div>
            
 

@@ -48,7 +48,7 @@ const IndoorFlower = () => {
                         )
                     } 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
             </div>   
 
     <Footer/>

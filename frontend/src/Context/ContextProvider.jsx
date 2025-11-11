@@ -158,26 +158,10 @@ const ContextProvider = ({children}) => {
     const SearchFun = () =>{
         setSearchFilterData(dataProduct.filter(a=>a.type.toLowerCase().includes(searchInt.toLowerCase()) || a.price.toString().includes(searchInt.toString())))
     }
-// const FetchProductdata = async()=>{
-//         try{
-//             const productList = await axios.get(`${url}/product/productget`)
-//             setDataProduct(productList.data)
-            
-//             console.log(productList.data)
-//         }
-//         catch(err){
-//             console.log(`Error name : ${err.name} , Error Message : ${err.message}`)
-//         }
-//     }
-//     useEffect(()=>{
-//         FetchProductdata()    
-//     },[])
-
-    const FetchProductdata = async(pageNumber = 1)=>{
+const FetchProductdata = async()=>{
         try{
-            const productList = await axios.get(`${url}/product/productget?page=${pageNumber}&limit=20`)
-            setDataProduct(productList.data.products)
-            setTotalPages(productList.data.totalPages);
+            const productList = await axios.get(`${url}/product/productget`)
+            setDataProduct(productList.data)    
             console.log(productList.data)
         }
         catch(err){
@@ -185,18 +169,33 @@ const ContextProvider = ({children}) => {
         }
     }
     useEffect(()=>{
-        FetchProductdata(page)    
+        FetchProductdata()    
     },[])
-    // =============================Pagination=====================================
-    const [page, setPage] = useState(1);
-    const [totalPages, setTotalPages] = useState(1);
-    const handleNext = () => {
-    if (page < totalPages) setPage(prev => prev + 1);
-  };
 
-  const handlePrev = () => {
-    if (page > 1) setPage(prev => prev - 1);
-  };
+    // const FetchProductdata = async(pageNumber = 1)=>{
+    //     try{
+    //         const productList = await axios.get(`${url}/product/productget?page=${pageNumber}&limit=20`)
+    //         setDataProduct(productList.data.products)
+    //         setTotalPages(productList.data.totalPages);
+    //         console.log(productList.data)
+    //     }
+    //     catch(err){
+    //         console.log(`Error name : ${err.name} , Error Message : ${err.message}`)
+    //     }
+    // }
+    // useEffect(()=>{
+    //     FetchProductdata(page)    
+    // },[])
+    // =============================Pagination=====================================
+  //   const [page, setPage] = useState(1);
+  //   const [totalPages, setTotalPages] = useState(1);
+  //   const handleNext = () => {
+  //   if (page < totalPages) setPage(prev => prev + 1);
+  // };
+
+  // const handlePrev = () => {
+  //   if (page > 1) setPage(prev => prev - 1);
+  // };
 
     const fbFun = () =>{
         window.open("https://www.facebook.com/" , "_blank") 

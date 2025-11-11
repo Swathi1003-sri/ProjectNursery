@@ -44,7 +44,7 @@ const WateringAccessories = () => {
                 )
             }
         </div>
-        <Pagination/>
+        {/* <Pagination/> */}
     </div>
 
 

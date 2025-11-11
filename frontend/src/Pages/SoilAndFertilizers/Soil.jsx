@@ -52,7 +52,7 @@ const Soil = () => {
             }
 
                 </div>
-                <Pagination/>
+                {/* <Pagination/> */}
     </div>
 
 
